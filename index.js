@@ -1,6 +1,8 @@
 var data = require("sdk/self").data;
 var buttons = require('sdk/ui/button/action');
+var showPassword = false;
 
+//TODO: Change lock icon to unlock icon when show password
 var button = buttons.ActionButton({
   id: "mozilla-link",
   label: "Show/Hide Password Field",
@@ -13,7 +15,17 @@ var button = buttons.ActionButton({
 });
 
 function handlePasswordField(state) {
-  require("sdk/tabs").activeTab.attach({
-    contentScriptFile: data.url("./js/password-field.js")
-  });
+  if (showPassword == false)
+  {
+    showPassword = true;
+    require("sdk/tabs").activeTab.attach({
+      contentScriptFile: data.url("./js/show-field.js")
+    });
+  } else
+  {
+    showPassword = false;
+    require("sdk/tabs").activeTab.attach({
+      contentScriptFile: data.url("./js/hide-field.js")
+    });
+  }
 }
