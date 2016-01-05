@@ -2,6 +2,7 @@ var data = require("sdk/self").data;
 var buttons = require('sdk/ui/button/action');
 var showPassword = false;
 
+//TODO: Impalement for android version
 //TODO: Change lock icon to unlock icon when show password
 var button = buttons.ActionButton({
   id: "mozilla-link",
@@ -15,6 +16,7 @@ var button = buttons.ActionButton({
 });
 
 function handlePasswordField(state) {
+  //TODO: Check page after first use. When second use if showPassword is true can not show password.
   if (showPassword == false)
   {
     showPassword = true;
