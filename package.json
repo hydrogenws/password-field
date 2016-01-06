@@ -1,13 +1,12 @@
 {
   "title": "Password Field",
   "name": "password-field",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Show and hide passwords field in page",
   "main": "index.js",
   "author": "Mostafa Mirmousavi",
   "engines": {
-    "firefox": ">=38.0a1",
-    "fennec": ">=38.0a1"
+    "firefox": ">=28"
   },
   "license": "MIT",
   "keywords": [
