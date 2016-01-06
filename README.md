@@ -1,6 +1,9 @@
 #Password Field
 Show and hide passwords field in page
 
+## Installation
+The addon is available on the [Mozilla Addons library](https://addons.mozilla.org/en-US/firefox/addon/password-field/).
+
 ## How to contribute
 In order to work on this project, you're going to need a few things:
  - [jpm](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_%28jpm%29), the build system for Firefox extensions
