@@ -3,7 +3,6 @@ Show and hide passwords field in page
 
 ## How to contribute
 In order to work on this project, you're going to need a few things:
- - [Firefox] :-D
  - [jpm](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_%28jpm%29), the build system for Firefox extensions
  - [Extension Auto-Installer](https://palant.de/2012/01/13/extension-auto-installer). Not neccecary, but highly reccomended
 
