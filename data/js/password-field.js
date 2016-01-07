@@ -1,12 +1,16 @@
+// Get count of Changed fields
 var passwordFieldCount = document.querySelectorAll('.show-password-field').length;
 if (passwordFieldCount > 0 ) {
+	// Loop for Change type of input to password
     for(var i=0; i < passwordFieldCount; i++)
     {
         document.querySelectorAll('.show-password-field').item(0).type = 'password';
         document.querySelectorAll('.show-password-field').item(0).classList.remove('show-password-field');
     }
 } else {
+	// Get count of password fields
     var fieldCount = document.querySelectorAll('input[type=password]').length;
+    // Loop for Change type of input to text
     for(var i=0; i < fieldCount; i++)
     {
         document.querySelectorAll('input[type=password]').item(0).classList.add('show-password-field');
